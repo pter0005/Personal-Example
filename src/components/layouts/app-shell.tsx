@@ -13,6 +13,7 @@ import { UserNav } from "@/components/shared/user-nav";
 import { Icons } from "@/components/icons";
 import Link from "next/link";
 import { MOCK_TRAINER_ID, students } from "@/lib/data";
+import { Button } from "@/components/ui/button";
 
 interface AppShellProps {
   children: React.ReactNode;
