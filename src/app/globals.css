@@ -66,7 +66,7 @@
     --sidebar-accent: 217.2 32.6% 17.5%;
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 217.2 32.6% 17.5%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 217.2 91.2% 598%;
   }
 }
 
@@ -75,6 +75,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-br from-cyan-950 to-blue-950 text-foreground;
+    @apply bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950 text-foreground;
   }
 }
