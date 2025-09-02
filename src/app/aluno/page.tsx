@@ -9,7 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { students, workoutPlans, exercises, physicalAssessments, studentSchedule } from "@/lib/data";
 import Link from "next/link";
-import { ArrowRight, Check, CheckCircle, Circle, Dumbbell, Target, Weight } from "lucide-react";
+import { ArrowRight, CheckCircle, Circle, Dumbbell, Target, Weight } from "lucide-react";
 
 export default function AlunoDashboardPage() {
     const student = students[0];
