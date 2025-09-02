@@ -31,7 +31,7 @@ export function AppShell({ children, sidebarContent, userType }: AppShellProps) 
   return (
     <SidebarProvider>
       <div className="flex min-h-screen w-full">
-        <Sidebar collapsible="icon">
+        <Sidebar collapsible="icon" className="border-r border-border/20">
           <SidebarHeader>
             <div className="flex items-center gap-2">
               <Button
@@ -56,7 +56,7 @@ export function AppShell({ children, sidebarContent, userType }: AppShellProps) 
         </Sidebar>
 
         <SidebarInset>
-          <header className="sticky top-0 z-10 flex h-14 items-center justify-between gap-4 border-b bg-background/80 px-4 backdrop-blur-sm sm:px-6">
+          <header className="sticky top-0 z-10 flex h-14 items-center justify-between gap-4 border-b border-border/20 bg-background/50 px-4 backdrop-blur-sm sm:px-6">
             <SidebarTrigger className="md:hidden" />
             <div className="flex-1" />
             <UserNav name={user.name} email={user.email} avatarUrl={user.avatarUrl} />
