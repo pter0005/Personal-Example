@@ -20,21 +20,21 @@ export default function LoginPage() {
             <p className="text-slate-400">Bem-vindo(a) de volta! Faça login na sua conta.</p>
         </div>
         
-        <Card className="w-full bg-black/10 backdrop-blur-xl border-white/10 aurora-background transition-transform duration-300 hover:scale-105">
-            <CardHeader className="relative z-10">
+        <Card className="w-full bg-black/10 backdrop-blur-xl border-white/10 transition-transform duration-300 hover:scale-105">
+            <CardHeader>
                 <CardTitle className="text-slate-200">Login</CardTitle>
             </CardHeader>
-            <CardContent className="relative z-10">
+            <CardContent>
                 <LoginForm />
             </CardContent>
         </Card>
 
-        <Card className="bg-black/10 backdrop-blur-xl border-white/10 aurora-background transition-transform duration-300 hover:scale-105">
-            <CardHeader className="relative z-10">
+        <Card className="bg-black/10 backdrop-blur-xl border-white/10 transition-transform duration-300 hover:scale-105">
+            <CardHeader>
                 <CardTitle className="text-base text-slate-200">Credenciais de Demonstração</CardTitle>
                 <CardDescription className="text-slate-400">Use os e-mails abaixo para acessar os painéis.</CardDescription>
             </CardHeader>
-            <CardContent className="relative z-10 space-y-4 text-sm">
+            <CardContent className="space-y-4 text-sm">
                 <div>
                     <h3 className="font-semibold text-slate-200">Personal Trainer</h3>
                     <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">trainer@email.com</span></p>
