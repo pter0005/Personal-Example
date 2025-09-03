@@ -12,7 +12,7 @@ import { Separator } from '@/components/ui/separator';
 
 export default function LoginPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900 via-blue-900 to-slate-900 p-4">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300/30 via-sky-900/50 to-slate-900 p-4">
       <div className="w-full max-w-md space-y-8">
         <div className="flex flex-col items-center space-y-2 text-center">
             <Icons.logo className="h-12 w-12 text-primary" />
@@ -20,7 +20,7 @@ export default function LoginPage() {
             <p className="text-muted-foreground">Bem-vindo(a) de volta! Faça login na sua conta.</p>
         </div>
         
-        <Card className="w-full">
+        <Card className="w-full bg-slate-800/20 backdrop-blur-lg border-white/10">
             <CardHeader>
                 <CardTitle>Login</CardTitle>
             </CardHeader>
@@ -29,7 +29,7 @@ export default function LoginPage() {
             </CardContent>
         </Card>
 
-        <Card>
+        <Card className="bg-slate-800/20 backdrop-blur-lg border-white/10">
             <CardHeader>
                 <CardTitle className="text-base">Credenciais de Demonstração</CardTitle>
                 <CardDescription>Use os e-mails abaixo para acessar os painéis.</CardDescription>
