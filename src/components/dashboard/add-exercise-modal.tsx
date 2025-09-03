@@ -9,6 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -23,10 +24,10 @@ export function AddExerciseModal() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Simulação de adição de exercício
     toast({
-      title: "Exercício Adicionado!",
-      description: "O novo exercício já está disponível na biblioteca.",
+      title: "Função Desabilitada",
+      description: "A adição de novos exercícios é apenas uma demonstração.",
+      variant: "destructive"
     });
     setOpen(false);
   };
@@ -36,7 +37,7 @@ export function AddExerciseModal() {
       <DialogTrigger asChild>
         <Button>
           <PlusCircle className="mr-2 h-4 w-4" />
-          Adicionar Novo Exercício
+          Adicionar Exercício
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
@@ -73,8 +74,17 @@ export function AddExerciseModal() {
               </Label>
               <Input id="picture" type="file" className="col-span-3" />
             </div>
+             <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="videoUrl" className="text-right">
+                URL do Vídeo
+              </Label>
+              <Input id="videoUrl" placeholder="https://youtube.com/embed/..." className="col-span-3" />
+            </div>
           </div>
           <DialogFooter>
+            <DialogClose asChild>
+              <Button type="button" variant="secondary">Cancelar</Button>
+            </DialogClose>
             <Button type="submit">Salvar Exercício</Button>
           </DialogFooter>
         </form>

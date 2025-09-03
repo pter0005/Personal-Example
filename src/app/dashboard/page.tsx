@@ -24,7 +24,7 @@ const stats = [
   },
   {
     title: "Total de Exercícios",
-    value: "8",
+    value: "12",
     icon: <Dumbbell className="h-6 w-6 text-muted-foreground" />,
   },
   {
@@ -53,7 +53,7 @@ export default function TrainerDashboardPage() {
           <AlertTitle>Modo de Demonstração</AlertTitle>
           <AlertDescription>
             Os dados exibidos nesta página são fictícios e servem apenas para
-            demonstração.
+            demonstração. Funcionalidades como adicionar alunos ou exercícios estão desabilitadas.
           </AlertDescription>
         </Alert>
 

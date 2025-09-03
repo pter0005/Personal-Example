@@ -9,7 +9,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { students, workoutPlans, exercises, physicalAssessments, studentSchedule } from "@/lib/data";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Circle, Dumbbell, Target, Weight } from "lucide-react";
+import { ArrowRight, CheckCircle, Circle, Dumbbell, Target, Weight, AlertTriangle } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function AlunoDashboardPage() {
     const student = students[0];
@@ -23,6 +24,14 @@ export default function AlunoDashboardPage() {
                 <h1 className="text-2xl font-bold tracking-tight md:text-3xl">Olá, {student.name.split(' ')[0]}!</h1>
                 <p className="text-muted-foreground">Pronto(a) para o treino de hoje?</p>
             </div>
+
+            <Alert>
+                <AlertTriangle className="h-4 w-4" />
+                <AlertTitle>Modo de Demonstração</AlertTitle>
+                <AlertDescription>
+                    Este site é uma demonstração. Algumas funcionalidades, como salvar alterações, estão desabilitadas.
+                </AlertDescription>
+            </Alert>
 
             <div className="grid gap-8 lg:grid-cols-3">
                 <div className="lg:col-span-2">

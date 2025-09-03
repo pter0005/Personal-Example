@@ -31,7 +31,7 @@ export default function ExercisesPage() {
       >
         <div className="flex items-center gap-4">
           <Select value={filter} onValueChange={setFilter}>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className="w-full sm:w-[180px]">
               <SelectValue placeholder="Filtrar por grupo" />
             </SelectTrigger>
             <SelectContent>

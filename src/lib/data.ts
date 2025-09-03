@@ -44,12 +44,16 @@ export const students: Student[] = [
 export const exercises: Exercise[] = [
   { id: 'ex-1', name: 'Supino Reto', muscleGroup: 'Peito', instructions: 'Deite-se no banco, segure a barra com as mãos um pouco mais afastadas que a largura dos ombros. Desça a barra até o peito e empurre para cima.', imageUrl: 'https://picsum.photos/600/400', videoUrl: 'https://www.youtube.com/embed/sqOw2Y6uDWQ' },
   { id: 'ex-2', name: 'Agachamento Livre', muscleGroup: 'Pernas', instructions: 'Com a barra nos ombros, agache como se fosse sentar em uma cadeira, mantendo as costas retas. Volte à posição inicial.', imageUrl: 'https://picsum.photos/601/401', videoUrl: 'https://www.youtube.com/embed/1oed-UmAxFs' },
-  { id: 'ex-3', name: 'Remada Curvada', muscleGroup: 'Costas', instructions: 'Incline o tronco para a frente, mantendo as costas retas. Puxe a barra em direção ao abdômen.', imageUrl: 'https://picsum.photos/602/402' },
-  { id: 'ex-4', name: 'Desenvolvimento com Halteres', muscleGroup: 'Ombros', instructions: 'Sentado em um banco, levante os halteres acima da cabeça até que os braços estejam estendidos.', imageUrl: 'https://picsum.photos/603/403' },
-  { id: 'ex-5', name: 'Rosca Direta', muscleGroup: 'Bíceps', instructions: 'Em pé, segure a barra com as palmas das mãos para cima. Flexione os cotovelos, trazendo a barra em direção ao peito.', imageUrl: 'https://picsum.photos/604/404' },
-  { id: 'ex-6', name: 'Tríceps na Polia', muscleGroup: 'Tríceps', instructions: 'Em pé, de frente para a polia, segure a barra com as palmas para baixo. Estenda os cotovelos para baixo.', imageUrl: 'https://picsum.photos/605/405' },
-  { id: 'ex-7', name: 'Levantamento Terra', muscleGroup: 'Costas', instructions: 'Agache e segure a barra. Levante-se estendendo as pernas e as costas simultaneamente. Mantenha a barra próxima ao corpo.', imageUrl: 'https://picsum.photos/606/406' },
-  { id: 'ex-8', name: 'Flexão de Braço', muscleGroup: 'Peito', instructions: 'Em posição de prancha, com as mãos na largura dos ombros. Desça o corpo até o peito quase tocar o chão e empurre para cima.', imageUrl: 'https://picsum.photos/607/407' },
+  { id: 'ex-3', name: 'Remada Curvada', muscleGroup: 'Costas', instructions: 'Incline o tronco para a frente, mantendo as costas retas. Puxe a barra em direção ao abdômen.', imageUrl: 'https://picsum.photos/602/402', videoUrl: 'https://www.youtube.com/embed/vT2GjY_Umpw' },
+  { id: 'ex-4', name: 'Desenvolvimento com Halteres', muscleGroup: 'Ombros', instructions: 'Sentado em um banco, levante os halteres acima da cabeça até que os braços estejam estendidos.', imageUrl: 'https://picsum.photos/603/403', videoUrl: 'https://www.youtube.com/embed/B-aVuyhvLHU' },
+  { id: 'ex-5', name: 'Rosca Direta', muscleGroup: 'Bíceps', instructions: 'Em pé, segure a barra com as palmas das mãos para cima. Flexione os cotovelos, trazendo a barra em direção ao peito.', imageUrl: 'https://picsum.photos/604/404', videoUrl: 'https://www.youtube.com/embed/kwG2Zqt1_0s' },
+  { id: 'ex-6', name: 'Tríceps na Polia', muscleGroup: 'Tríceps', instructions: 'Em pé, de frente para a polia, segure a barra com as palmas para baixo. Estenda os cotovelos para baixo.', imageUrl: 'https://picsum.photos/605/405', videoUrl: 'https://www.youtube.com/embed/3-_3nUT-gok' },
+  { id: 'ex-7', name: 'Levantamento Terra', muscleGroup: 'Costas', instructions: 'Agache e segure a barra. Levante-se estendendo as pernas e as costas simultaneamente. Mantenha a barra próxima ao corpo.', imageUrl: 'https://picsum.photos/606/406', videoUrl: 'https://www.youtube.com/embed/UAmH_L4_A4E' },
+  { id: 'ex-8', name: 'Flexão de Braço', muscleGroup: 'Peito', instructions: 'Em posição de prancha, com as mãos na largura dos ombros. Desça o corpo até o peito quase tocar o chão e empurre para cima.', imageUrl: 'https://picsum.photos/607/407', videoUrl: 'https://www.youtube.com/embed/IODxDxX7oi4' },
+  { id: 'ex-9', name: 'Leg Press', muscleGroup: 'Pernas', instructions: 'Sente-se na máquina com os pés na plataforma. Empurre a plataforma até estender as pernas e retorne de forma controlada.', imageUrl: 'https://picsum.photos/608/408', videoUrl: 'https://www.youtube.com/embed/GvRgijoJ2xY' },
+  { id: 'ex-10', name: 'Puxada Frontal', muscleGroup: 'Costas', instructions: 'Sente-se de frente para a máquina e puxe a barra em direção à parte superior do peito, contraindo as costas.', imageUrl: 'https://picsum.photos/609/409', videoUrl: 'https://www.youtube.com/embed/i3nDE4L3q2I' },
+  { id: 'ex-11', name: 'Elevação Lateral', muscleGroup: 'Ombros', instructions: 'Em pé, segure um halter em cada mão. Levante os braços para os lados até a altura dos ombros.', imageUrl: 'https://picsum.photos/610/410', videoUrl: 'https://www.youtube.com/embed/34Bhrd_Rz_o' },
+  { id: 'ex-12', name: 'Prancha Abdominal', muscleGroup: 'Abdômen', instructions: 'Apoie os antebraços e os dedos dos pés no chão. Mantenha o corpo reto como uma prancha, contraindo o abdômen.', imageUrl: 'https://picsum.photos/611/411', videoUrl: 'https://www.youtube.com/embed/asquSH2Qvs4' },
 ];
 
 export const workoutPlans: WorkoutPlan[] = [
@@ -74,6 +78,7 @@ export const workoutPlans: WorkoutPlan[] = [
     exercises: [
       { exerciseId: 'ex-2', sets: '4', reps: '8-12', rest: '90s' },
       { exerciseId: 'ex-7', sets: '3', reps: '6-8', rest: '120s' },
+      { exerciseId: 'ex-9', sets: '4', reps: '10-12', rest: '60s' },
     ],
   },
 ];
