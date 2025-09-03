@@ -1,3 +1,4 @@
+// Forçando a sincronização do ambiente
 import Link from 'next/link';
 import { LoginForm } from '@/components/auth/login-form';
 import {
@@ -16,14 +17,14 @@ export default function LoginPage() {
       <div className="w-full max-w-md space-y-8">
         <div className="flex flex-col items-center space-y-2 text-center">
             <Icons.logo className="h-12 w-12 text-primary" />
-            <h1 className="text-3xl font-bold tracking-tight">TrainFlow</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-white">TrainFlow</h1>
             <p className="text-slate-300">Bem-vindo(a) de volta! Faça login na sua conta.</p>
         </div>
         
         <div className="group relative">
           <Card className="w-full bg-slate-800/50 backdrop-blur-lg border-white/10 transition-transform duration-300 group-hover:scale-105">
               <CardHeader>
-                  <CardTitle>Login</CardTitle>
+                  <CardTitle className="text-white">Login</CardTitle>
               </CardHeader>
               <CardContent>
                   <LoginForm />
@@ -34,18 +35,18 @@ export default function LoginPage() {
         <div className="group relative">
           <Card className="bg-slate-800/50 backdrop-blur-lg border-white/10 transition-transform duration-300 group-hover:scale-105">
               <CardHeader>
-                  <CardTitle className="text-base">Credenciais de Demonstração</CardTitle>
+                  <CardTitle className="text-base text-white">Credenciais de Demonstração</CardTitle>
                   <CardDescription className="text-slate-400">Use os e-mails abaixo para acessar os painéis.</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4 text-sm">
                   <div>
-                      <h3 className="font-semibold">Personal Trainer</h3>
+                      <h3 className="font-semibold text-white">Personal Trainer</h3>
                       <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">trainer@email.com</span></p>
                       <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
                   </div>
-                  <Separator />
+                  <Separator className="bg-white/10" />
                   <div>
-                      <h3 className="font-semibold">Aluno</h3>
+                      <h3 className="font-semibold text-white">Aluno</h3>
                       <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">aluno@email.com</span></p>
                       <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
                   </div>
