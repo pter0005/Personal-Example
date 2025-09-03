@@ -27,7 +27,6 @@ import {
   exercises as allExercises,
   physicalAssessments,
 } from "@/lib/data";
-import { WorkoutPlanGenerator } from "@/components/dashboard/workout-plan-generator";
 import {
   ChartContainer,
   ChartTooltip,
@@ -141,7 +140,6 @@ export function StudentProfileTabs({ student }: StudentProfileTabsProps) {
             ))}
           </CardContent>
         </Card>
-        <WorkoutPlanGenerator />
       </TabsContent>
 
       <TabsContent value="assessment" className="mt-4 space-y-6">
