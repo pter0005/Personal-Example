@@ -38,7 +38,17 @@ export function LoginForm() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Simulação de login
+    const validEmails = ["aluno@email.com", "trainer@email.com"];
+
+    if (!validEmails.includes(values.email)) {
+        toast({
+            title: "Erro de Login",
+            description: "Credenciais inválidas. Por favor, use um dos e-mails de demonstração.",
+            variant: "destructive",
+        });
+        return;
+    }
+
     toast({
       title: "Login realizado com sucesso!",
       description: "Redirecionando para o painel...",
