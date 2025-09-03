@@ -21,7 +21,7 @@ export default function LoginPage() {
         </div>
         
         <div className="group relative">
-          <Card className="aurora-border w-full bg-slate-800/50 backdrop-blur-lg border-white/10">
+          <Card className="w-full bg-slate-800/50 backdrop-blur-lg border-white/10 transition-transform duration-300 group-hover:scale-105">
               <CardHeader>
                   <CardTitle>Login</CardTitle>
               </CardHeader>
@@ -32,7 +32,7 @@ export default function LoginPage() {
         </div>
 
         <div className="group relative">
-          <Card className="aurora-border bg-slate-800/50 backdrop-blur-lg border-white/10">
+          <Card className="bg-slate-800/50 backdrop-blur-lg border-white/10 transition-transform duration-300 group-hover:scale-105">
               <CardHeader>
                   <CardTitle className="text-base">Credenciais de Demonstração</CardTitle>
                   <CardDescription className="text-slate-400">Use os e-mails abaixo para acessar os painéis.</CardDescription>

@@ -63,12 +63,3 @@
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 }
-
-@layer utilities {
-  .aurora-border::before {
-    content: "";
-    @apply absolute -inset-px rounded-xl bg-gradient-to-r from-cyan-500/50 via-blue-500/50 to-indigo-500/50 opacity-100;
-    filter: blur(8px);
-    z-index: -1;
-  }
-}
