@@ -20,34 +20,38 @@ export default function LoginPage() {
             <p className="text-slate-300">Bem-vindo(a) de volta! Faça login na sua conta.</p>
         </div>
         
-        <Card className="w-full bg-slate-800/20 backdrop-blur-lg border-white/10">
-            <CardHeader>
-                <CardTitle>Login</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <LoginForm />
-            </CardContent>
-        </Card>
+        <div className="group relative">
+          <Card className="aurora-border w-full bg-slate-800/50 backdrop-blur-lg border-white/10">
+              <CardHeader>
+                  <CardTitle>Login</CardTitle>
+              </CardHeader>
+              <CardContent>
+                  <LoginForm />
+              </CardContent>
+          </Card>
+        </div>
 
-        <Card className="bg-slate-800/20 backdrop-blur-lg border-white/10">
-            <CardHeader>
-                <CardTitle className="text-base">Credenciais de Demonstração</CardTitle>
-                <CardDescription className="text-slate-400">Use os e-mails abaixo para acessar os painéis.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4 text-sm">
-                <div>
-                    <h3 className="font-semibold">Personal Trainer</h3>
-                    <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">trainer@email.com</span></p>
-                    <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
-                </div>
-                <Separator />
-                <div>
-                    <h3 className="font-semibold">Aluno</h3>
-                    <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">aluno@email.com</span></p>
-                    <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
-                </div>
-            </CardContent>
-        </Card>
+        <div className="group relative">
+          <Card className="aurora-border bg-slate-800/50 backdrop-blur-lg border-white/10">
+              <CardHeader>
+                  <CardTitle className="text-base">Credenciais de Demonstração</CardTitle>
+                  <CardDescription className="text-slate-400">Use os e-mails abaixo para acessar os painéis.</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4 text-sm">
+                  <div>
+                      <h3 className="font-semibold">Personal Trainer</h3>
+                      <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">trainer@email.com</span></p>
+                      <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
+                  </div>
+                  <Separator />
+                  <div>
+                      <h3 className="font-semibold">Aluno</h3>
+                      <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">aluno@email.com</span></p>
+                      <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
+                  </div>
+              </CardContent>
+          </Card>
+        </div>
 
         <p className="text-center text-sm text-slate-400">
             Não tem uma conta?{' '}
