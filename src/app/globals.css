@@ -61,6 +61,6 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: 'rlig' 1, 'calt' 1;
-    background-image: linear-gradient(to bottom, #1b2735 0%, #090a0f 70%);
+    background-image: linear-gradient(to bottom, #10346B 0%, #000000 70%);
   }
 }
