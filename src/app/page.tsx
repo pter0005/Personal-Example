@@ -17,7 +17,7 @@ export default function LoginPage() {
         <div className="flex flex-col items-center space-y-2 text-center">
             <Icons.logo className="h-12 w-12 text-primary" />
             <h1 className="text-3xl font-bold tracking-tight">TrainFlow</h1>
-            <p className="text-muted-foreground">Bem-vindo(a) de volta! Faça login na sua conta.</p>
+            <p className="text-slate-300">Bem-vindo(a) de volta! Faça login na sua conta.</p>
         </div>
         
         <Card className="w-full bg-slate-800/20 backdrop-blur-lg border-white/10">
@@ -32,24 +32,24 @@ export default function LoginPage() {
         <Card className="bg-slate-800/20 backdrop-blur-lg border-white/10">
             <CardHeader>
                 <CardTitle className="text-base">Credenciais de Demonstração</CardTitle>
-                <CardDescription>Use os e-mails abaixo para acessar os painéis.</CardDescription>
+                <CardDescription className="text-slate-400">Use os e-mails abaixo para acessar os painéis.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4 text-sm">
                 <div>
                     <h3 className="font-semibold">Personal Trainer</h3>
-                    <p className="text-muted-foreground">E-mail: <span className="font-mono">trainer@email.com</span></p>
-                    <p className="text-muted-foreground">Senha: <span className="font-mono">qualquer_senha</span></p>
+                    <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">trainer@email.com</span></p>
+                    <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
                 </div>
                 <Separator />
                 <div>
                     <h3 className="font-semibold">Aluno</h3>
-                    <p className="text-muted-foreground">E-mail: <span className="font-mono">aluno@email.com</span></p>
-                    <p className="text-muted-foreground">Senha: <span className="font-mono">qualquer_senha</span></p>
+                    <p className="text-slate-400">E-mail: <span className="font-mono text-slate-300">aluno@email.com</span></p>
+                    <p className="text-slate-400">Senha: <span className="font-mono text-slate-300">qualquer_senha</span></p>
                 </div>
             </CardContent>
         </Card>
 
-        <p className="text-center text-sm text-muted-foreground">
+        <p className="text-center text-sm text-slate-400">
             Não tem uma conta?{' '}
             <Link href="/register" className="font-medium text-primary hover:underline">
                 Cadastre-se
