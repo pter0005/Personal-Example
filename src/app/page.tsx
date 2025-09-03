@@ -20,7 +20,7 @@ export default function LoginPage() {
             <p className="text-slate-400">Bem-vindo(a) de volta! Faça login na sua conta.</p>
         </div>
         
-        <Card className="w-full bg-slate-900/30 backdrop-blur-lg border-white/10 aurora-background">
+        <Card className="w-full bg-black/10 backdrop-blur-xl border-white/10 aurora-background">
             <CardHeader className="relative z-10">
                 <CardTitle className="text-slate-200">Login</CardTitle>
             </CardHeader>
@@ -29,7 +29,7 @@ export default function LoginPage() {
             </CardContent>
         </Card>
 
-        <Card className="bg-slate-900/30 backdrop-blur-lg border-white/10 aurora-background">
+        <Card className="bg-black/10 backdrop-blur-xl border-white/10 aurora-background">
             <CardHeader className="relative z-10">
                 <CardTitle className="text-base text-slate-200">Credenciais de Demonstração</CardTitle>
                 <CardDescription className="text-slate-400">Use os e-mails abaixo para acessar os painéis.</CardDescription>

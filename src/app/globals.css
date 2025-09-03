@@ -80,25 +80,15 @@
     width: 200%;
     height: 200%;
     z-index: 0;
-    filter: blur(80px);
-    opacity: 0.3;
+    filter: blur(100px);
+    opacity: 0.2;
     transform-origin: center;
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%);
     background-image: conic-gradient(
-      from 90deg at 50% 50%,
+      from 180deg at 50% 50%,
       #2d3f5a 0%,
       #3f5a8c 50%,
       #2d3f5a 100%
     );
-    animation: aurora-spin 10s linear infinite;
-  }
-
-  @keyframes aurora-spin {
-    from {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
   }
 }
