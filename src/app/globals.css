@@ -75,6 +75,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950 text-foreground;
+    @apply bg-gradient-to-br from-blue-200 to-blue-400 text-foreground;
   }
 }
