@@ -61,5 +61,44 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: 'rlig' 1, 'calt' 1;
+    background-color: #0A192F;
+    background-image: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+  }
+}
+
+@layer utilities {
+  .aurora-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .aurora-background::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    z-index: 0;
+    filter: blur(80px);
+    opacity: 0.3;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-image: conic-gradient(
+      from 90deg at 50% 50%,
+      #2d3f5a 0%,
+      #3f5a8c 50%,
+      #2d3f5a 100%
+    );
+    animation: aurora-spin 10s linear infinite;
+  }
+
+  @keyframes aurora-spin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
   }
 }
